@@ -1,0 +1,370 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #003352;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.slideshow .slide {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+}
+
+.slideshow .slide.active {
+    display: block; 
+}
+
+.join-now-box {
+    position: absolute;
+    top: 75%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; 
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.join-now-box a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 28px; 
+    transition: color 0.3s ease; 
+}
+
+.join-now-box a:hover {
+    color: #FFD700;
+}
+
+.about-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px;
+    text-align: center;
+}
+
+.about-header-img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; 
+}
+
+.header-text {
+    margin-top: 20px;
+}
+
+
+/* Programs Section */
+.programs {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.programs h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.program-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.program {
+    flex: 1;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.program h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.program p {
+    font-size: 1rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: #003352;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.testimonial cite {
+    font-style: italic;
+    color: #FFD700;
+}
+
+/* Team Section */
+.team {
+    background: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.team-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.team-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.team-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0 5px;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.team-card p:first-of-type {
+    font-weight: bold;
+    color: #003352;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
+}
+
+footer .socials li {
+    margin: 0 10px;
+}
+
+footer .socials li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer .socials li a:hover {
+    text-decoration: underline;
+}
+
+/* Events Header */
+.events-header {
+    text-align: center;
+    background: url('assets/events-bg.jpg') no-repeat center center/cover;
+    color: black;
+    padding: 60px 20px;
+}
+
+.events-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.events-header p {
+    font-size: 1.2rem;
+}
+
+/* Events Timeline */
+.events-timeline {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.event:hover {
+    transform: translateY(-5px);
+}
+
+.event-date {
+    background: #003352;
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.event-details {
+    padding: 20px;
+    flex: 1;
+}
+
+.event-details h2 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+    color: #003352;
+}
+
+.event-details p {
+    margin: 0;
+    color: #555;
+}
+
+/* Header Section */
+.join-header {
+    background: url('assets/join-header-bg.jpg') no-repeat center center/cover;
+    color: black;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.join-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.join-header p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Join Info Section */
+.join-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background: #f4f4f4;
+}
+
+.join-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    flex: 1;
+}
+
+.join-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #003352;
+}
+
+.join-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.cta-button {
+    background: #FFD700;
+    color: #003352;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #FFC107;
+}
