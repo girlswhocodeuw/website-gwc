@@ -78,6 +78,7 @@ nav ul li a {
     color: #FFD700;
 }
 
+/* About Section*/ 
 .about-header {
     display: flex;
     flex-direction: column;
@@ -177,8 +178,9 @@ nav ul li a {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 300px;
+    max-width: 300px;
     text-align: center;
+    flex: 1;
 }
 
 .team-card:hover {
@@ -207,6 +209,29 @@ nav ul li a {
 .team-card p:first-of-type {
     font-weight: bold;
     color: #003352;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    background: #003352;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #005e8b;
+    transform: scale(1.05);
 }
 
 /* Footer */
